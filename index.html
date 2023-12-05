@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF=8">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="midasi">
+<h1>プログラム復習コンテンツ</h1>
+<a href="https://o-saringu.github.io/mokuji/">
+<div class="home"></div>
+</a>
+</div>
+
+<div class="oomidasi"><p>pushMatrix(),popMatrix関数</div>
+
+<div class="yoko">
+	<div class="yoko1">
+	<div class="komidasi1"><p>サンプルコードの結果</p></div>
+	<img src = "6-4.png">
+	</div>
+	<div class="yoko1">
+	<div class="komidasi2"><p>サンプルコード</div>
+	<div class="code">　	
+	<p>　　	void setup(){
+	<p>　　	　size(120, 120); 
+	<p>　　	｝
+	<p>　　	
+	<p>　　	void draw(){
+	<p>　　	　pushMatrix();
+	<p>　　	　translate(mouseX, mouseY);
+	<p>　　	　rect(0, 0, 30, 30);
+	<p>　　	　popMatrix();
+	<p>　　	　translate(35, 10);
+	<p>　　	　rect(0, 0, 15, 15);
+	<p>　　	}　　
+	</div>
+	</div>
+</div>
+
+<div class="komidasi3"><p>説明文</div>
+<div class="ep">
+	<p>　pushMatrix(),popMatrix()関数は座標系を復元させる関数。
+	<p>　pushMatrix()とpopMatrix()は常にペアで使用する。
+	<p>　pushMatrix()時点での座標系を記録し、popMatrix()で記録した座標系に復元する。
+	<p>　例では、pushMatrix()時点では、座標系は基本の（0，0）となっている。
+	<p>　1つ目の四角形はmouseX,mouseY変数によって座標系が毎回変わるが、2つ目の四角形は、popMatrix()によって座標系が（0，0）に変更されているため、mouseX,mouseY変数の影響を受けずに常に同じ位置に表示される。
+
+</div>
+</body>
+
