@@ -1,7 +1,14 @@
 <!DOCTYPE html>
+<html lang="jp">
+
 <head>
-<meta charset="UTF=8">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=M+PLUS+1p:wght@500&family=Oswald&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -22,17 +29,17 @@
 	<div class="yoko1">
 	<div class="komidasi2"><p>サンプルコード</div>
 	<div class="code">　	
-	<p>　　	void setup(){
-	<p>　　	　size(120, 120); 
+	<p>　　	<a href="https://o-saringu.github.io/5-2/"target="_blank" rel="noopener noreferrer" >void setup()</a>{
+	<p>　　	　<a href="https://o-saringu.github.io/size/"target="_blank" rel="noopener noreferrer" >size</a>(120, 120); 
 	<p>　　	｝
 	<p>　　	
-	<p>　　	void draw(){
+	<p>　　	<a href="https://o-saringu.github.io/5-1/"target="_blank" rel="noopener noreferrer" >void draw()</a>{
 	<p>　　	　pushMatrix();
-	<p>　　	　translate(mouseX, mouseY);
-	<p>　　	　rect(0, 0, 30, 30);
+	<p>　　	　<a href="https://o-saringu.github.io/6-1/"target="_blank" rel="noopener noreferrer" >translate</a>(<a href="https://o-saringu.github.io/5-3/"target="_blank" rel="noopener noreferrer" >mouseX, mouseY</a>);
+	<p>　　	　<a href="https://o-saringu.github.io/rect/"target="_blank" rel="noopener noreferrer" >rect</a>(0, 0, 30, 30);
 	<p>　　	　popMatrix();
-	<p>　　	　translate(35, 10);
-	<p>　　	　rect(0, 0, 15, 15);
+	<p>　　	　<a href="https://o-saringu.github.io/6-1/"target="_blank" rel="noopener noreferrer" >translate</a>(35, 10);
+	<p>　　	　<a href="https://o-saringu.github.io/rect/"target="_blank" rel="noopener noreferrer" >rect</a>(0, 0, 15, 15);
 	<p>　　	}　　
 	</div>
 	</div>
@@ -44,7 +51,7 @@
 	<p>　pushMatrix()とpopMatrix()は常にペアで使用する。
 	<p>　pushMatrix()時点での座標系を記録し、popMatrix()で記録した座標系に復元する。
 	<p>　例では、pushMatrix()時点では、座標系は基本の（0，0）となっている。
-	<p>　1つ目の四角形はmouseX,mouseY変数によって座標系が毎回変わるが、2つ目の四角形は、popMatrix()によって座標系が（0，0）に変更されているため、mouseX,mouseY変数の影響を受けずに常に同じ位置に表示される。
+	<p>　1つ目の四角形は<a href="https://o-saringu.github.io/5-3/"target="_blank" rel="noopener noreferrer" >mouseX,mouseY変数</a>によって座標系が毎回変わるが、2つ目の四角形は、popMatrix()によって座標系が（0，0）に変更されているため、<a href="https://o-saringu.github.io/5-3/"target="_blank" rel="noopener noreferrer" >mouseX,mouseY変数</a>の影響を受けずに常に同じ位置に表示される。
 
 </div>
 </body>
